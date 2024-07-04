@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <h1>Contact Us</h1>
+        <form class="form-container">
+          <div class="form-holder">
+            <div class="form-data">
+              <label for="first-name" class="required form-label">First Name</label> <br />
+              <input type="text" class="form-input" id="first-name" name="First Name" />
+            </div>
+            <div class="error" id="FirstnameError"></div>
+          </div>
+          <br />
+
+          <div class="form-holder">
+            <div class="form-data">
+              <label for="last-name" class="required form-label">Last Name</label><br />
+              <input type="text" class="form-input" id="last-name" name="Last Name" />
+            </div>
+            <div class="error" id="LastnameError"></div>
+          </div>
+
+          <br />
+          <div class="form-holder">
+            <div class="form-data">
+              <label for="email"  class="required form-label">Email Address</label><br />
+              <input type="email" class="form-input" id="email-address" name="First Name" />
+            </div>
+            <div class="error" id="EmailError"></div>
+          </div>
+
+          <br />
+          <!-- query Type -->
+
+          <div class="form-holder">
+            <div class="form-data" >
+              <label for="query-type"  class="required form-label">Query Type</label>
+              <br />
+              <div class="radio1">
+                <input type="radio"  name="general" id="general-radio" /><label
+                for="genral-label"
+                >General Enquiry</label
+              >
+
+              </div>
+
+             
+              <br />
+              <input type="radio" name="support" id="support-radio" /><label
+                for="support-label"
+                >Support Request</label
+              >
+            </div>
+            <div class="error" id="queryError"></div>
+          </div>
+
+          <br />
+
+          <!-- message -->
+          <div class="form-holder">
+            <div class="form-data">
+              <label for="message" class="required form-label">Message</label>
+              <br />
+              <textarea
+                name="message"
+                id="message-input"
+                rows="10"
+                cols="20"
+                class="form-textarea"
+              ></textarea>
+            </div>
+            <div class="error" id="messageError"></div>
+          </div>
+
+          <div class="form-holder" >
+            <div class="form-data" id="last-check-div">
+              <input type="checkbox" class="form-checkbox" id="last-check" />
+              <label class="required form-label form-checkbox-label" for="gridCheck">
+                I consent to being contacted by the team
+              </label>
+            </div>
+            <div class="error" id="lastError"></div>
+          </div>
+
+          <input type="button" class="form-button"  id="submit-btn"  value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

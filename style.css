@@ -1,0 +1,128 @@
+@media (max-width: 490px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Karla", sans-serif;
+    background-color: aquamarine;
+  }
+
+  .main {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  .required::after {
+    content: " *";
+    color: green;
+    font-size: 5vw;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5vw 5vw;
+  }
+
+  form {
+    width: 100%;
+    padding-top: 6vw;
+  }
+  .error {
+    color: red;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .form-textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .form-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .form-checkbox-label {
+    cursor: pointer;
+  }
+
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Form submit button hover */
+  .form-button:hover {
+    background-color: #3e8e41;
+  }
+
+
+
+
+  #last-check-div{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .radio1{
+    border: 2px solid red;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
